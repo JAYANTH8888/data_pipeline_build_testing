@@ -1,0 +1,9 @@
+warehouse/
+mlruns/
+data_source/
+__pycache__/
+*.pyc
+.pytest_cache/
+spark-warehouse/
+metastore_db/
+*.log
