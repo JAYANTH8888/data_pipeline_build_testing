@@ -1,0 +1,98 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "772076f4-1df5-459c-8751-6c161d9efea7",
+  "location" : "/workspaces/data_pipeline_build_testing/warehouse/db/corporate_registry",
+  "last-sequence-number" : 1,
+  "last-updated-ms" : 1766834125766,
+  "last-column-id" : 7,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "corporate_name",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 2,
+      "name" : "address",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "top_suppliers",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 4,
+      "name" : "revenue",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 5,
+      "name" : "profit",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 6,
+      "name" : "corporate_id",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 7,
+      "name" : "updated_at",
+      "required" : false,
+      "type" : "timestamptz"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "codespace",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : 4006146579923280002,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 4006146579923280002,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 4006146579923280002,
+    "timestamp-ms" : 1766834125766,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1766834114981",
+      "added-data-files" : "2",
+      "added-records" : "24014",
+      "added-files-size" : "1227376",
+      "changed-partition-count" : "1",
+      "total-records" : "24014",
+      "total-files-size" : "1227376",
+      "total-data-files" : "2",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "/workspaces/data_pipeline_build_testing/warehouse/db/corporate_registry/metadata/snap-4006146579923280002-1-5072638c-695f-43dc-b800-ca1370ada59e.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1766834125766,
+    "snapshot-id" : 4006146579923280002
+  } ],
+  "metadata-log" : [ ]
+}
