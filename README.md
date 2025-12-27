@@ -68,7 +68,10 @@ pytest tests/
 ```
 
 
-Implementation Notes
-Local Warehouse: The Iceberg catalog is configured as type=hadoop pointing to the local warehouse/ directory. This simulates S3/Cloud storage behavior on a local disk.
-Memory Optimization: The Iceberg write operation is performed without partitioning by unique ID. Partitioning by high-cardinality columns on small local machines (like GitHub Codespaces) causes OutOfMemory errors due to the number of open file buffers.
-Java Compatibility: Recent environments often default to Java 21, which is incompatible with the current Spark/Hadoop security manager. The CI/CD pipeline and local instructions strictly enforce Java 17.
+## Implementation Notes
+### Local Warehouse: 
+The Iceberg catalog is configured as type=hadoop pointing to the local warehouse/ directory. This simulates S3/Cloud storage behavior on a local disk.
+### Memory Optimization: 
+The Iceberg write operation is performed without partitioning by unique ID. Partitioning by high-cardinality columns on small local machines (like GitHub Codespaces) causes OutOfMemory errors due to the number of open file buffers.
+### Java Compatibility: 
+Recent environments often default to Java 21, which is incompatible with the current Spark/Hadoop security manager. The CI/CD pipeline and local instructions strictly enforce Java 17.
